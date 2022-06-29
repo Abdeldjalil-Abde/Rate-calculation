@@ -1,128 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rate Calculation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-        <div class="left">
-            <section></section>
-        </div>
-    <div class="right">
-        <section>
-            <div class="form">
-                <span>Compelation</span>
-                <div>
-                    <label for="">Examen</label>
-                    <input type="number">
-                </div>
-                <div>
-                    <label for="">TD</label>
-                    <input type="number" >
-                </div>
-                <div>
-                    <label for="">TP</label>
-                    <input type="number" >
-                </div>
-            </div>
-            <div class="form">
-                <span>System dexploitation</span>
-                <div>
-                    <label for="">Examen</label>
-                    <input type="number" >
-                </div>
-                <div>
-                    <label for="">TD</label>
-                    <input type="number" >
-                </div>
-                <div>
-                    <label for="">TP</label>
-                    <input type="number" >
-                </div>
-            </div>
-            <div class="form">
-                <span>Genie logicile</span>
-                <div>
-                    <label for="">Examen</label>
-                    <input type="number" >
-                </div>
-                <div>
-                    <label for="">TD</label>
-                    <input type="number" >
-                </div>
-                <div>
-                    <label for="">TP</label>
-                    <input type="number" >
-                </div>
-            </div>
-            <div class="form">
-                <span>IHM</span>
-                <div>
-                    <label for="">Examen</label>
-                    <input type="number" >
-                </div>
-                <div>
-                    <label for="">TD</label>
-                    <input type="number" >
-                </div>
-                <div>
-                    <label for="">TP</label>
-                    <input type="number" >
-                </div>
-            </div>
-            <div class="form">
-                <span> Pogrmaion lineaure</span>
-                <div>
-                    <label for="">Examen</label>
-                    <input type="number" >
-                </div>
-                <div>
-                    <label for="">TD</label>
-                    <input type="number" >
-                </div>
-                <div>
-                    <label for="">TP</label>
-                    <input type="number" >
-                </div>
-            </div>
-            <div class="form">
-                <span>Probabilite</span>
-                <div>
-                    <label for="">Examen</label>
-                    <input type="number" >
-                </div>
-                <div>
-                    <label for="">TD</label>
-                    <input type="number" >
-                </div>
-                <div>
-                    <label for="">TP</label>
-                    <input type="number" >
-                </div>
-            </div>
-            <div class="form">
-                <span> ENVS</span>
-                <div>
-                    <label for="">Examen</label>
-                    <input type="number" >
-                </div>
-                <div>
-                    <label for="">TD</label>
-                    <input type="number" >
-                </div>
-                <div>
-                    <label for="">TP</label>
-                    <input type="number" >
-                </div>
-            </div>
-            <button> result</button>
-        </section>
-        <div class="result"></div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="left">
+      <section></section>
     </div>
-
-</body>
+    <div class="right">
+      <section>
+        <div class="form" coefficient="3" id="fondamental" class ="Compelation" >
+          <span>Compelation</span>
+          <div>
+            <label for="">Examen</label>
+            <input type="number" />
+          </div>
+          <div>
+            <label for="">TD</label>
+            <input type="number" />
+          </div>
+          <div>
+            <label for="">TP</label>
+            <input type="number" />
+          </div>
+        </div>
+        <div class="form" coefficient="3" id="fondamental" class ="SystemDexploitation" >
+          <span>System dexploitation</span>
+          <div>
+            <label for="">Examen</label>
+            <input type="number" />
+          </div>
+          <div>
+            <label for="">TD</label>
+            <input type="number" />
+          </div>
+          <div>
+            <label for="">TP</label>
+            <input type="number" />
+          </div>
+        </div>
+        <div class="form" coefficient="3" id="fondamental" class ="GenieLogicile">
+          <span>Genie logicile</span>
+          <div>
+            <label for="">Examen</label>
+            <input type="number" />
+          </div>
+          <div>
+            <label for="">TD</label>
+            <input type="number" />
+          </div>
+          <div>
+            <label for="">TP</label>
+            <input type="number" />
+          </div>
+        </div>
+        <div class="form" coefficient="3" id="fondamental" class ="IHM">
+          <span>IHM</span>
+          <div>
+            <label for="">Examen</label>
+            <input type="number" />
+          </div>
+          <div>
+            <label for="">TD</label>
+            <input type="number" />
+          </div>
+          <div>
+            <label for="">TP</label>
+            <input type="number" />
+          </div>
+        </div>
+        <div class="form" coefficient="2" id="secondaire"  class ="PogrmaionLineaure">
+          <span> Pogrmaion lineaure</span>
+          <div>
+            <label for="">Examen</label>
+            <input type="number" />
+          </div>
+          <div>
+            <label for="">TD</label>
+            <input type="number" />
+          </div>
+          <div>
+            <label for="" class="visible">TP</label>
+            <input type="number" class="visible"/>
+          </div>
+        </div>
+        <div class="form" coefficient="2" id="secondaire"  class ="Probabilite">
+          <span>Probabilite</span>
+          <div>
+            <label for="">Examen</label>
+            <input type="number" />
+          </div>
+          <div>
+            <label for="">TD</label>
+            <input type="number" />
+          </div>
+          <div>
+            <label for="" class="visible">TP</label>
+            <input type="number"  class="visible"/>
+          </div>
+        </div>
+        <div class="form" coefficient="1"  id="primaire">
+          <span> ENVS</span>
+          <div>
+            <label for="">Examen</label>
+            <input type="number"  />
+          </div>
+          <div>
+            <label for="" class="visible">TD</label>
+            <input type="number" class="visible" />
+          </div>
+          <div>
+            <label for="" class="visible">TP</label>
+            <input type="number"  class="visible"/>
+          </div>
+        </div>
+        <button>result</button>
+      </section>
+      <div class="result">
+        <h2 class="colore"></h2>
+        <span></span>
+      </div>
+    </div>
+    <script type="text/javascript" src="calculation.js"></script>
+  </body>
 </html>
