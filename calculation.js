@@ -1,10 +1,6 @@
-// let com_ex =  document.getElementById("com_ex").textContent;
-// com_ex.getAttribute("value");
-// com_ex.setAttribute("value",5);
  var result =  document.querySelector(".result span");
  var suu = document.querySelector(".result h2");
  const button = document.querySelector("button");
-
 
 //  button.addEventListener("click", function () {
 //    var Compelation = document.querySelectorAll("#Compelation input");
@@ -39,6 +35,7 @@
    var secondaire = document.querySelectorAll("#secondaire");
    var primaire = document.querySelectorAll("#primaire");
    var i = 0 , Som_Module = 0 , coefficient = 0 , moyenne_Module , moyenne; ;
+   if(fondamental){
    for( i=0;i<fondamental.length;i++){                 // Calcul de som module fondamental 
 
        moyenne_Module = (parseFloat(fondamental[i].querySelectorAll("input")[0].value) * 0.6 + ((parseFloat(fondamental[i].querySelectorAll("input")[1].value) + parseFloat(fondamental[i].querySelectorAll("input")[2].value))/2) * 0.4); 
@@ -48,6 +45,8 @@
        coefficient = coefficient + parseFloat(fondamental[i].getAttribute("coefficient"));
        
     }
+  }
+  if(secondaire){
     for( i=0;i<secondaire.length;i++){                // Calcul de som module secondaire
       
       moyenne_Module = parseFloat(secondaire[i].querySelectorAll("input")[0].value) * 0.6 + parseFloat(secondaire[i].querySelectorAll("input")[1].value) * 0.4 ; 
@@ -57,9 +56,11 @@
       coefficient = coefficient + parseFloat(secondaire[i].getAttribute("coefficient"));
 
     }
+  }
+  if(primaire){
     for( i=0;i<primaire.length;i++){               // Calcul de som module secondaire
   
-      if(fondamental.length == 1){
+      if(primaire.length == 1){
 
       moyenne_Module = parseFloat(primaire.querySelectorAll("input")[0].value) * primaire.getAttribute("coefficient");   // Calculer de Module substance dans coefficient (module primaire)
 
@@ -78,7 +79,7 @@
 
       }
     }
-
+  }
     moyenne = Som_Module / coefficient;
     if(moyenne >= 10){
     suu.textContent = "ناجح"; 
