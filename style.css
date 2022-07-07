@@ -61,7 +61,7 @@ body div a:hover{
     background-color: rgb(24, 24, 218);
 
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     body{
         margin-top: 50px;
     }
