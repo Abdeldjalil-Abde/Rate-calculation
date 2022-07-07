@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rate Calculation</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../semaster.css" />
   </head>
   <body>
     <div class="left">
-      <section></section>
+      <div class="beak">
+        <a href="../index.html">&#8592;</a>
+      </div>
+      <section>
+        <a href="semaster1.html"> الفصل الأول </a>
+        <a href="semaster2.html"> الفصل الثاني </a>
+      </section>
     </div>
     <div class="right">
       <section>
-        <div class="form" coefficient="3" id="fondamental" class ="Compelation" >
-          <span>Compelation</span>
-          
+        <div class="form" coefficient="4" id = "form"  status ="3">
+          <span>ASD 1</span>
+          <aside>
           <div>
             <label for="">Examen</label>
             <input type="number" />
@@ -28,9 +34,11 @@
             <label for="">TP</label>
             <input type="number" />
           </div>
+        </aside>
         </div>
-        <div class="form" coefficient="3" id="fondamental" class ="SystemDexploitation" >
-          <span>System dexploitation</span>
+        <div class="form" coefficient="4" id = "form"  status ="2" >
+          <span>Analyse 1</span>
+          <aside>
           <div>
             <label for="">Examen</label>
             <input type="number" />
@@ -40,12 +48,14 @@
             <input type="number" />
           </div>
           <div>
-            <label for="">TP</label>
-            <input type="number" />
+            <label for="" class="visible">TP</label>
+            <input type="number" class="visible" />
           </div>
+          </aside>
         </div>
-        <div class="form" coefficient="3" id="fondamental" class ="GenieLogicile">
-          <span>Genie logicile</span>
+        <div class="form" coefficient="3" id = "form"  status ="2" >
+          <span> Algebre 1</span>
+          <aside>
           <div>
             <label for="">Examen</label>
             <input type="number" />
@@ -55,12 +65,14 @@
             <input type="number" />
           </div>
           <div>
-            <label for="">TP</label>
-            <input type="number" />
+            <label class="visible">TP</label>
+            <input type="number" class="visible"/>
           </div>
+        </aside>
         </div>
-        <div class="form" coefficient="3" id="fondamental" class ="IHM">
-          <span>IHM</span>
+        <div class="form" coefficient="3" id = "form"  status ="2" >
+          <span>Structure Machine 1</span>
+          <aside>
           <div>
             <label for="">Examen</label>
             <input type="number" />
@@ -70,13 +82,14 @@
             <input type="number" />
           </div>
           <div>
-            <label for="">TP</label>
-            <input type="number" />
+            <label for="" class="visible">TP</label>
+            <input type="number" class="visible" />
           </div>
+          </aside>
         </div>
-        <div class="form" coefficient="2" id="secondaire"  class ="PogrmaionLineaure">
-          <span> Pogrmaion lineaure</span>
-          
+        <div class="form" coefficient="2" id = "form"  status ="2" >
+          <span> Physique 1</span>
+          <aside>
           <div>
             <label for="">Examen</label>
             <input type="number" />
@@ -89,24 +102,28 @@
             <label for="" class="visible">TP</label>
             <input type="number" class="visible"/>
           </div>
+          </aside>
         </div>
-        <div class="form" coefficient="2" id="secondaire"  class ="Probabilite">
-          <span>Probabilite</span>
+        <div class="form" coefficient="1" id = "form"  status ="1">
+          <span>TSE ecrite </span>
+           <aside>
           <div>
             <label for="">Examen</label>
             <input type="number" />
           </div>
           <div>
-            <label for="">TD</label>
-            <input type="number" />
+            <label for="" class="visible">TD</label>
+            <input type="number" class="visible" />
           </div>
           <div>
             <label for="" class="visible">TP</label>
             <input type="number"  class="visible"/>
           </div>
+          </aside>
         </div>
-        <div class="form" coefficient="1"  id="primaire">
-          <span> ENVS</span>
+        <div class="form" coefficient="1" id = "form"  status ="1" >
+          <span> Anglais </span>
+          <aside>
           <div>
             <label for="">Examen</label>
             <input type="number"  />
@@ -119,6 +136,7 @@
             <label for="" class="visible">TP</label>
             <input type="number"  class="visible"/>
           </div>
+          </aside>
         </div>
         <button>result</button>
       </section>
@@ -127,7 +145,6 @@
         <span></span>
       </div>
     </div>
-    <script type="text/javascript" src="calculation.js"></script>
-
+    <script type="text/javascript" src="../calculation.js"></script>
   </body>
 </html>
